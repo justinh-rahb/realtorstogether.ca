@@ -331,9 +331,45 @@ button.wp-block-navigation__responsive-container-close { margin-top: 20px !impor
 
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<div class="wp-block-group has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-6 wp-block-group-is-layout-constrained" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30)">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-6 wp-block-group-is-layout-constrained" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30)">
 <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-5 wp-block-group-is-layout-constrained">
-<div id="tableauViz"></div>
+<!--<div id="tableauViz"></div>
+<script data-jetpack-boost="ignore" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script data-jetpack-boost="ignore">
+    var divElement = document.getElementById('tableauViz');
+    var vizElement = divElement;
+    var url = 'https://public.tableau.com/views/CornerstoneHPIDashboard-public/Perf_overtimelinecht';
+    var options = {
+        width: '100%',
+        height: '850px',
+        hideTabs: true,
+        hideToolbar: true,
+    };
+    var viz = new tableau.Viz(vizElement, url, options);
+</script>-->
+<div class="tableauPlaceholder" id="viz1718209767828" style="position: relative; background-color: #121212; color: white; font-family: Arial, sans-serif;">
+	<noscript>
+		<a href="#">
+			<img alt="" src="https://i0.wp.com/public.tableau.com/static/images/Co/CornerstoneHPIDashboard-public/Perf_overtimelinecht/1_rss.png?ssl=1" style="border: none" data-recalc-dims="1">
+		</a>
+	</noscript>
+	<object class="tableauViz" style="display:none;">
+		<param name="host_url" value="https://public.tableau.com/">
+		<param name="embed_code_version" value="3">
+		<param name="site_root" value="">
+		<param name="name" value="CornerstoneHPIDashboard-public/Perf_overtimelinecht">
+		<param name="tabs" value="yes">
+		<param name="toolbar" value="yes">
+		<param name="showShareOptions" value="false">
+		<param name="static_image" value="https://public.tableau.com/static/images/Co/CornerstoneHPIDashboard-public/Perf_overtimelinecht/1.png">
+		<param name="animate_transition" value="yes">
+		<param name="display_static_image" value="yes">
+		<param name="display_spinner" value="yes">
+		<param name="display_overlay" value="yes">
+		<param name="display_count" value="no">
+		<param name="language" value="en-US">
+	</object>
+</div>
 
 
 </div>
@@ -446,16 +482,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script><script id="sgr-js-extra">var sgr = {"sgr_site_key":"6LfJQfIjAAAAAPxFMgSSa-3tKCBZQitnnzN1yGNe"};</script><script src="https://www.cornerstone.inc/wp-content/plugins/simple-google-recaptcha/sgr.js?ver=1677119322" id="sgr-js"></script><script src="https://c0.wp.com/c/6.5.5/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script><script src="https://c0.wp.com/c/6.5.5/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script><script src="https://www.cornerstone.inc/wp-content/plugins/miniorange-login-openid/includes/js/mo_openid_jquery.cookie.min.js?ver=6.5.5" id="js-cookie-script-js"></script><script src="https://www.cornerstone.inc/wp-content/plugins/miniorange-login-openid/includes/js/mo-openid-social_login.js?ver=6.5.5" id="mo-social-login-script-js"></script><script id="to-top-js-extra">var to_top_options = {"scroll_offset":"100","icon_opacity":"50","style":"icon","icon_type":"dashicons-arrow-up-alt2","icon_color":"#ffffff","icon_bg_color":"#212121","icon_size":"40","border_radius":"5","image":"https:\/\/www.cornerstone.inc\/wp-content\/plugins\/to-top\/admin\/images\/default.png","image_width":"65","image_alt":"","location":"bottom-right","margin_x":"20","margin_y":"90","show_on_admin":"0","enable_autohide":"1","autohide_time":"2","enable_hide_small_device":"0","small_device_max_width":"640","reset":"0"};</script><script async src="https://www.cornerstone.inc/wp-content/plugins/to-top/public/js/to-top-public.js?ver=2.5.4" id="to-top-js"></script><script>document.documentElement.className += " js";</script><script id="wp-load-polyfill-importmap">
 ( HTMLScriptElement.supports && HTMLScriptElement.supports("importmap") ) || document.write( '<script src="https://c0.wp.com/c/6.5.5/wp-includes/js/dist/vendor/wp-polyfill-importmap.min.js"><\/scr' + 'ipt>' );
-</script><script type="module" src="https://www.cornerstone.inc/wp-includes/blocks/navigation/view.min.js?ver=6.5.5" id="@wordpress/block-library/navigation-js-module"></script><script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script><script>var divElement = document.getElementById('tableauViz');
-    var vizElement = divElement;
-    var url = 'https://public.tableau.com/views/CornerstoneHPIDashboard-public/Perf_overtimelinecht';
-    var options = {
-        width: '100%',
-        height: '850px',
-        hideTabs: true,
-        hideToolbar: true,
-    };
-    var viz = new tableau.Viz(vizElement, url, options);</script><script>window.addEventListener( 'load', function() {
+</script><script type="module" src="https://www.cornerstone.inc/wp-includes/blocks/navigation/view.min.js?ver=6.5.5" id="@wordpress/block-library/navigation-js-module"></script><script>var divElement = document.getElementById('viz1718209767828');
+var vizElement = divElement.getElementsByTagName('object')[0];
+vizElement.style.width = '1000px';
+vizElement.style.height = '850px';
+
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);</script><script>window.addEventListener( 'load', function() {
 				document.querySelectorAll( 'link' ).forEach( function( e ) {'not all' === e.media && e.dataset.media && ( e.media = e.dataset.media, delete e.dataset.media );} );
 				var e = document.getElementById( 'jetpack-boost-critical-css' );
 				e && ( e.media = 'not all' );
@@ -527,6 +561,6 @@ _stq.push([ "clickTrackerInit", "226562017", "2485" ]);</script>
 <!--
 Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
 
-Retrieved 2303 objects (1 MB) from Redis using PhpRedis (v5.3.5).
+Retrieved 2299 objects (1 MB) from Redis using PhpRedis (v5.3.5).
 -->
 </html>
